@@ -269,4 +269,30 @@ function closeConfirmationPopup() {
 function deliveryService() {
     window.location.href = 'store.html';
 }
+function sendSOS() {
+    // Show the popup
+    document.getElementById('sosPopup').style.display = 'flex';
+
+    // Get user's coordinates
+    if (navigator.geolocation) {
+        navigator.geolocation.getCurrentPosition(function(position) {
+            const coords = position.coords;
+            document.getElementById('coordinates').innerText = `Latitude: ${coords.latitude}, Longitude: ${coords.longitude}`;
+
+            // Change message after 10 seconds
+            setTimeout(function() {
+                document.getElementById('popup-message').innerText = 'Your Request is Sent';
+            }, 3500); // 10 seconds
+        }, function() {
+            document.getElementById('coordinates').innerText = 'Unable to retrieve your coordinates';
+        });
+    } else {
+        document.getElementById('coordinates').innerText = 'Geolocation is not supported by this browser';
+    }
+}
+
+function closePopup() {
+    // Close the popup
+    document.getElementById('sosPopup').style.display = 'none';
+}
 
