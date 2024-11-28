@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html class="no-js" lang="">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <title>Aeg1s Features</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.svg"/>
+    <!-- Place favicon.ico in the root directory -->
+
+    <!-- ========================= CSS here ========================= -->
+    <link rel="stylesheet" href="assets/css/bootstrap-5.0.0-beta2.min.css" />
+    <link rel="stylesheet" href="assets/css/LineIcons.2.0.css" />
+    <link rel="stylesheet" href="assets/css/tiny-slider.css" />
+    <link rel="stylesheet" href="assets/css/animate.css" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+	<link rel="stylesheet" href="https://cdn.lineicons.com/2.0/LineIcons.min.css">
+
+  </head>
+  <body>
+    <!--[if lte IE 9]>
+      <p class="browserupgrade">
+        You are using an <strong>outdated</strong> browser. Please
+        <a href="https://browsehappy.com/">upgrade your browser</a> to improve
+        your experience and security.
+      </p>
+    <![endif]-->
+
+    <!-- ========================= preloader start ========================= -->
+    <div class="preloader">
+      <div class="loader">
+        <div class="spinner">
+          <div class="spinner-container">
+            <div class="spinner-rotator">
+              <div class="spinner-left">
+                <div class="spinner-circle"></div>
+              </div>
+              <div class="spinner-right">
+                <div class="spinner-circle"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+		<!-- preloader end -->
+		
+
+    <!-- ========================= header start ========================= -->
+    <header class="header">
+      <div class="navbar-area">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-lg-12" style="margin-top: 2vh;">
+              <nav class="navbar navbar-expand-lg">
+                <a class="navbar-brand" href="index.html" style="display: flex; align-items: center; text-decoration: none; max-height: 2.5rem;">
+					<img src="assets/img/logo/Aeg1s-removebg-preview.png" alt="Logo" style="height: 150px;">
+					<span id="logo-name" style="font-size: 2.5rem; font-weight: bold; color: #4A7DF7; font-family: Fira Sans, sans-serif; font-weight: 700; margin-left: -20px; color: #4A7DF7;">Aeg1s</span>
+				  </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="toggler-icon"></span>
+                  <span class="toggler-icon"></span>
+                  <span class="toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse sub-menu-bar" id="navbarSupportedContent" style="color:#4A7DF7 !important">
+                  <ul id="nav" class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                      <a style="color: black !important" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                      <a style="color: black !important" class="" href="index.html#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                      <a style="color: black !important" class="active" href="features.html">Features</a>
+                    </li>
+                    <li class="nav-item">
+						<a style="color:black !important" class="" href="index.html#testimonials">Testimonial</a>
+                    </li>
+                    <li class="nav-item">
+                      <a style="color: black !important" class="" href="index.html#faq">FAQ</a>
+                    </li>
+                  </ul>
+                </div>
+                <!-- navbar collapse -->
+              </nav>
+              <!-- navbar -->
+            </div>
+          </div>
+          <!-- row -->
+        </div>
+        <!-- container -->
+      </div>
+      <!-- navbar area -->
+    </header>
+    <!-- ========================= header end ========================= -->
+		<!-- ========================= feature-section start ========================= -->
+		<section id="feature" class="feature-section pt-140">
+			<div class="container">
+				<div class="row justify-content-center">
+					<div class="col-xxl-5 col-xl-6 col-lg-7">
+						<div class="section-title text-center mb-30">
+							<h1 class="mb-25 wow fadeInUp" data-wow-delay=".2s" style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInUp;">Our Available Funtions</h1>
+							<p class="wow fadeInUp" data-wow-delay=".4s" style="visibility: visible; animation-delay: 0.4s; animation-name: fadeInUp;"></p>
+						</div>
+					</div>
+				</div>
+				<div id="symptomPopup" class="popup-container" style="display:none;">
+					<div class="popup-content">
+						<span id="closePopup" class="close-button">&times;</span>
+						<h2>Select Your Symptoms</h2>
+				
+						<!-- Symptom Selection Form -->
+						<form id="symptomForm">
+							<label><input type="checkbox" name="symptom" value="fever"> Fever</label><br>
+							<label><input type="checkbox" name="symptom" value="headache"> Headache</label><br>
+							<label><input type="checkbox" name="symptom" value="cough"> Cough</label><br>
+							<label><input type="checkbox" name="symptom" value="stomach pain"> Stomach Pain</label><br>
+							<label><input type="checkbox" name="symptom" value="fatigue"> Fatigue</label><br><br>
+				
+							<button type="submit">Get Recommendations</button>
+						</form>
+				
+						<!-- Section for displaying recommendations and medications -->
+						<div id="popupContent" style="margin-top: 20px;"></div>
+					</div>
+				</div>
+
+				<div class="row justify-content-center">
+					<div class="col-lg-4 col-md-8 col-sm-10">
+						<div class="single-feature">
+							<div class="icon color-1">
+								<i class="lni lni-pointer-up"></i>
+							</div>
+							<div class="content">
+								<h3>Symptoms Identifier</h3>
+								<p>Get the best treatments or medications for your symptoms.</p>
+								<button onclick="identifySymptoms()" class="btn btn-primary">Learn More</button>
+							</div>
+						</div>
+					</div>
+		
+					<div class="col-lg-4 col-md-8 col-sm-10">
+						<div class="single-feature">
+							<div class="icon color-2">
+								<i class="lni lni-revenue"></i>
+							</div>
+							<div class="content">
+								<h3>Locate Nearest Medical Help</h3>
+								<p>Find the nearest clinics or hospitals in your area.</p>
+								<button onclick="locateMedicalHelp()" class="btn btn-primary">Find Help</button>
+							</div>
+						</div>
+					</div>
+		
+					<div class="col-lg-4 col-md-8 col-sm-10">
+						<div class="single-feature">
+							<div class="icon color-3">
+								<i class="lni lni-sthethoscope"></i>
+							</div>
+							<div class="content">
+								<h3>Make An Appointment</h3>
+								<p>Find your desired hospital and book an appointment with them.</p>
+									<button type="button" onclick="makeAppointment()" class="btn btn-primary">Book Now</button>
+							</div>
+						</div>
+					</div>					
+					<!-- Appointment Booking Popup -->
+					<div id="appointmentPopup" class="popup-container-2" style="display:none;">
+						<div class="popup-content-2">
+							<span id="closeAppointmentPopup" class="close-button-2">&times;</span>
+							<h2>Book an Appointment</h2>
+					
+							<!-- Hospital Selection Form -->
+							<form id="appointmentForm">
+								<label for="hospitalSelect">Choose a hospital:</label>
+								<select id="hospitalSelect" class="form-control" required>
+									<option value="none">-- Select a Hospital --</option>
+									<option value="sunrise-hospital">Sunrise Hospital (Cambodia)</option>
+									<option value="calmette-hospital">Calmette Hospital (Cambodia)</option>
+									<option value="central-hospital">Central Hospital (Cambodia)</option>
+									<option value="royalpp-hospital">Royal Phnom Penh Hospital (Cambodia)</option>
+									<option value="mayo-clinic">Mayo Clinic (USA)</option>
+									<option value="cleveland-clinic">Cleveland Clinic (USA)</option>
+									<option value="johns-hopkins">Johns Hopkins Hospital (USA)</option>
+									<option value="bumrungrad">Bumrungrad International Hospital (Thailand)</option>
+									<option value="st-thomas">St. Thomas' Hospital (UK)</option>
+									<option value="singapore-general">Singapore General Hospital (Singapore)</option>
+								</select>
+					
+								<label for="appointmentTime">Choose a time:</label>
+								<input type="datetime-local" id="appointmentTime" class="form-control" required>
+					
+								<button type="button" class="btn btn-primary" onclick="confirmAppointment()">Confirm Booking</button>
+							</form>
+						</div>
+					</div>
+					<!-- Appointment Confirmation Popup -->
+					<div id="confirmationPopup" class="popup-container-2" style="display:none;">
+						<div class="popup-content-2">
+							<span id="closeConfirmationPopup" class="close-button-2">&times;</span>
+							<h2>Your Appointment is Booked!</h2>
+							<p id="confirmationMessage">Thank you for booking your appointment.</p>
+							<button class="btn btn-primary" onclick="closeConfirmationPopup()">OK</button>
+						</div>
+					</div>
+
+					
+					<div class="col-lg-4 col-md-8 col-sm-10">
+						<div class="single-feature">
+							<div class="icon color-2">
+								<svg width="80" height="80" viewBox="0 0 24 24" fill="#ffffff" xmlns="http://www.w3.org/2000/svg">
+									<path d="M10.9193 10.419C10.9192 10.0048 10.5834 9.669 10.1692 9.66904C9.755 9.66908 9.41925 10.0049 9.41929 10.4191V15.5816C9.41925 15.9958 9.755 16.3317 10.1692 16.3317C10.5834 16.3317 10.9192 15.996 10.9193 15.5818L10.9195 13.7504H13.0807L13.0807 15.5817C13.0807 15.9959 13.4165 16.3317 13.8307 16.3317C14.2449 16.3317 14.5807 15.9959 14.5807 15.5817L14.5807 10.419C14.5807 10.0048 14.2449 9.66904 13.8307 9.66904C13.4164 9.66904 13.0807 10.0048 13.0807 10.419V12.2504H10.9195L10.9193 10.419Z" fill="#ffffff"/>
+									<path fill-rule="evenodd" clip-rule="evenodd" d="M13.35 3.70391C12.55 3.10391 11.45 3.10391 10.65 3.70391L4.15 8.57891C3.58344 9.00383 3.25 9.6707 3.25 10.3789V18.5003C3.25 19.743 4.25736 20.7503 5.5 20.7503H18.5C19.7426 20.7503 20.75 19.743 20.75 18.5003V10.3789C20.75 9.6707 20.4166 9.00383 19.85 8.57891L13.35 3.70391ZM11.55 4.90391C11.8167 4.70391 12.1833 4.70391 12.45 4.90391L18.95 9.77891C19.1389 9.92055 19.25 10.1428 19.25 10.3789V18.5003C19.25 18.9145 18.9142 19.2503 18.5 19.2503H5.5C5.08579 19.2503 4.75 18.9145 4.75 18.5003V10.3789C4.75 10.1428 4.86115 9.92055 5.05 9.77891L11.55 4.90391Z" fill="#ffffff"/>
+								</svg>
+							</div>
+							<div class="content">
+								<h3>Delivery Service</h3>
+								<p>Buy your goods at a cheap price.</p>
+								<button onclick="deliveryService()" class="btn btn-primary">Shop Now</button>
+							</div>
+						</div>
+					</div>
+		
+					<div class="col-lg-4 col-md-8 col-sm-10">
+						<div class="single-feature">
+							<div class="icon color-3">
+								<svg width="80" height="80" viewBox="0 0 25 25" fill="#ffffff" xmlns="http://www.w3.org/2000/svg" transform="rotate(0 0 0)">
+									<path d="M19.5568 3.79138C19.8802 3.53259 20.3522 3.58497 20.611 3.90839C22.4874 6.2534 22.4874 10.0006 20.611 12.3456C20.3522 12.669 19.8802 12.7214 19.5568 12.4626C19.2334 12.2038 19.181 11.7318 19.4398 11.4084C20.8778 9.61126 20.8778 6.6427 19.4398 4.84557C19.181 4.52216 19.2334 4.05018 19.5568 3.79138Z" fill="#ffffff"/>
+									<path d="M4.65862 4.84557C4.91741 4.52216 4.86503 4.05018 4.54161 3.79138C4.2182 3.53259 3.74622 3.58497 3.48743 3.90839C1.61096 6.2534 1.61096 10.0006 3.48743 12.3456C3.74622 12.669 4.2182 12.7214 4.54161 12.4626C4.86503 12.2038 4.91741 11.7318 4.65862 11.4084C3.22057 9.61126 3.22056 6.6427 4.65862 4.84557Z" fill="#ffffff"/>
+									<path d="M8.09555 6.87313C7.40305 7.56563 7.40305 8.6884 8.09555 9.38091C8.38844 9.6738 8.38844 10.1487 8.09555 10.4416C7.80266 10.7345 7.32778 10.7345 7.03489 10.4416C5.7566 9.16328 5.7566 7.09076 7.03489 5.81247C7.32778 5.51958 7.80266 5.51958 8.09555 5.81247C8.38844 6.10536 8.38844 6.58024 8.09555 6.87313Z" fill="#ffffff"/>
+									<path d="M16.0021 6.87313C16.6946 7.56563 16.6946 8.6884 16.0021 9.38091C15.7092 9.6738 15.7092 10.1487 16.0021 10.4416C16.295 10.7345 16.7699 10.7345 17.0628 10.4416C18.3411 9.16328 18.3411 7.09076 17.0628 5.81247C16.7699 5.51958 16.295 5.51958 16.0021 5.81247C15.7092 6.10536 15.7092 6.58024 16.0021 6.87313Z" fill="#ffffff"/>
+									<path d="M10.3008 8.12698C10.3008 7.16048 11.0843 6.37698 12.0508 6.37698H12.0518C13.0183 6.37698 13.8018 7.16048 13.8018 8.12698C13.8018 8.82624 13.3917 9.42971 12.7988 9.70997L12.7988 20.377C12.7988 20.7912 12.463 21.127 12.0488 21.127C11.6346 21.127 11.2988 20.7912 11.2988 20.377L11.2988 9.70764C10.7086 9.42638 10.3008 8.82431 10.3008 8.12698Z" fill="#ffffff"/>
+									</svg>
+									
+							</div>
+							<div class="content">
+								<h3>SOS Signal</h3>
+								<p>Send a distress signal to the nearest hospital or emergency service</p>
+								<button onclick="sendSOS()" class="btn btn-primary">Send</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		
+		<!-- ========================= feature-section end ========================= -->
+
+    <!-- ========================= footer start ========================= -->
+    <footer id="footer" class="footer">
+		<div class="container">
+			<div class="widget-wrapper">
+				<div class="row">
+					<div class="col-xl-2 col-md-6">
+						<div class="footer-widget">
+							<h3>About Us</h3>
+							<ul class="links">
+								<li> <a href="index.html">Home</a> </li>
+								<li> <a href="index.html#about">About Us</a> </li>
+								<li> <a href="features.html">Features</a> </li>
+								<li> <a href="store.html">Store</a> </li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-xl-4 col-md-6">
+						<div class="footer-widget">
+							<h3>Download App</h3>
+							<ul class="download">
+								<li>
+									<a href="https://apps.apple.com/us/app/google-maps/id585027354">
+										<span class="icon"><i class="lni lni-apple"></i></span>
+										<span class="text">Download on the <b>App Store</b> </span>
+									</a>
+								</li>
+								<li>
+									<a href="https://play.google.com/store/apps/details?id=com.google.android.apps.maps">
+										<span class="icon"><i class="lni lni-play-store"></i></span>
+										<span class="text">GET IT ON <b>Play Store</b> </span>
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="copy-right-wrapper">
+				<div class="row">
+					<div class="col-md-6">
+						<div class="copy-right">
+							<p>Design and Developed by Care4U. </p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+    <!-- ========================= footer end ========================= -->
+
+    <!-- ========================= scroll-top ========================= -->
+    <a href="#" class="scroll-top btn-hover">
+      <i class="lni lni-chevron-up"></i>
+    </a>
+
+    <!-- ========================= JS here ========================= -->
+    <script src="assets/js/bootstrap-5.0.0-beta2.min.js"></script>
+    <script src="assets/js/tiny-slider.js"></script>
+    <script src="assets/js/wow.min.js"></script>
+    <script src="assets/js/polifill.js"></script>
+    <script src="assets/js/features.js"></script>
+  </body>
+</html>
